@@ -1,0 +1,20 @@
+<slideshow #slideshow [showDots]="false" [showCaptions]="false" [autoPlay]="false" [imageUrls]="imageUrls" [backgroundRepeat]="no-repeat" [height]="'400px'" (onSlideLeft)="onSlideLeft(slideIndex)" (onSlideRight)="onSlideRight(slideIndex)" (onSwipeLeft)="onSlideLeft(slideIndex)" (onSwipeRight)="onSlideRight(slideIndex)"></slideshow>
+<div *ngIf="displaySectionName('about')" class="section-name about">
+    <h2>About</h2>
+</div>
+
+<div *ngIf="displaySectionName('web-design')" class="section-name web-design">
+    <h2>Web Design</h2>
+</div>
+
+<div *ngIf="displaySectionName('photography')" class="section-name photography">
+    <h2>Photography</h2>
+</div>
+
+<div *ngIf="displaySectionName('writing')" class="section-name writing">
+    <h2>Writing</h2>
+</div>
+
+<div *ngIf="displaySectionName('contact')" class="section-name contact">
+    <h2>Contact</h2>
+</div>

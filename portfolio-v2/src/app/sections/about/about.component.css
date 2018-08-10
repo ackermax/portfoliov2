@@ -1,0 +1,47 @@
+.about-card {
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 15px;
+    border: 3px solid #103343;
+    background-color: rgb(231, 231, 231);
+}
+
+.profile-image {
+    width: 10em;
+    height: 10em;
+    float: right;
+    margin: 5px;
+    border: 2px solid #103343;
+    border-radius: 10px;
+}
+
+p {
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 350px) {
+    .profile-image {
+        width: 8em;
+        height: 8em;
+    }
+}
+
+@keyframes fadeinTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#fade-in {
+    -webkit-animation: fadeinTop 2.5s;
+    -moz-animation: fadeinTop 2.5s;
+    -ms-animation: fadeinTop 2.5s;
+    -o-animation: fadeinTop 2.5s;
+    animation: fadeinTop 2.5s;
+}

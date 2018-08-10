@@ -1,0 +1,64 @@
+.caption {
+    text-align: center;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.section-name {
+    -webkit-animation: fadein 2.5s;
+    -moz-animation: fadein 2.5s;
+    -ms-animation: fadein 2.5s;
+    -o-animation: fadein 2.5s;
+    animation: fadein 2.5s;
+    font-size: 8em !important;
+    text-shadow: 3px 1px rgb(54, 54, 54);
+}
+
+.about {
+    position: absolute;
+    top: 2.2em;
+    left: 1.2em;
+    color: antiquewhite;
+}
+
+.web-design {
+    position: absolute;
+    top: .8em;
+    left: 3em;
+    color: antiquewhite;
+}
+
+.photography {
+    position: absolute;
+    top: .8em;
+    left: 3em;
+    color: antiquewhite;
+}
+
+.writing {
+    position: absolute;
+    top: .8em;
+    left: 3em;
+    color: antiquewhite;
+}
+
+.contact {
+    position: absolute;
+    top: .8em;
+    left: 3em;
+    color: antiquewhite;
+}
+
+@media only screen and (max-width: 450px) {
+    .about {
+        top: 2.5em;
+        left: .3em; 
+    }
+}
